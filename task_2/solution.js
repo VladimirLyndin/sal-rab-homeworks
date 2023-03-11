@@ -30,6 +30,11 @@ function calcShipping(sum, min, shipping) {
         shippingSum = shippingPrice;
     }
 
+    // if (productsSum == 0 || productsSum >= freeShippingMinSum) {
+    // shippingSum = 0;
+    // }  
+    // В таком случае, последнюю ветку можно было сделать просто else. Для ветки else условие писать вообще не нужно.
+
     // Конец решения задания №2.1.
 
     return shippingSum;
@@ -55,6 +60,8 @@ function calcDiscount(sum, min, discount) {
     } else {
         discountSum = 0;
     }
+
+    // let discountSum = productsSum >= discountMinSum ? productsSum / 100 * discountPart : 0;
 
     // Конец решения задания №2.2.
 
